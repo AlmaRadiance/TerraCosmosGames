@@ -177,27 +177,27 @@ button:hover {
 
 /* Bin Image Backgrounds */
 #plastic-bin {
-    background: url('images/plastic.png') no-repeat center center;
+    background: url('Images/plastic.png') no-repeat center center;
     background-size: cover;
 }
 
 #organic-bin {
-    background: url('images/organic.png') no-repeat center center;
+    background: url('Images/organic.png') no-repeat center center;
     background-size: cover;
 }
 
 #glass-bin {
-    background: url('images/glass.png') no-repeat center center;
+    background: url('Images/glass.png') no-repeat center center;
     background-size: cover;
 }
 
 #paper-bin {
-    background: url('images/paper.png') no-repeat center center;
+    background: url('Images/paper.png') no-repeat center center;
     background-size: cover;
 }
 
 #metal-bin {
-    background: url('images/metal.png') no-repeat center center;
+    background: url('Images/metal.png') no-repeat center center;
     background-size: cover;
 }
 
