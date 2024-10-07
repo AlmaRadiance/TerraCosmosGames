@@ -8,7 +8,7 @@ const trashItems = [
     { type: "Plastic Container", src: "Images/plastic container Background Removed.png", binType: "plastic-bin" },
     { type: "Plastic Bottle Blue", src: "Images/plastic bottle blue Background Removed.png", binType: "plastic-bin" },
     { type: "Pizza", src: "Images/pizza Background Removed.png", binType: "organic-bin" },
-    { type: "Paper Roll", src: "images/paper roll Background Removed.png", binType: "paper-bin" },
+    { type: "Paper Roll", src: "Images/paper roll Background Removed.png", binType: "paper-bin" },
     { type: "Paper Box", src: "Images/paper box Background Removed.png", binType: "paper-bin" },
     { type: "Green Plastic Glass", src: "Images/green plastic glass Background Removed.png", binType: "plastic-bin" },
     { type: "Glass Bottle", src: "Images/glass bottle Background Removed.png", binType: "glass-bin" },
