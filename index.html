@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Warriors: Clean Up Challenge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="background-video">
+        <source src="Images/Beach.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="game">
+        <header>
+            <h1>Eco Warriors: Clean Up Challenge</h1>
+            <button id="start-mission">Start Mission</button>
+            <div id="high-score">High Score: 0</div>
+        </header>
+        
+        <img id="main-menu-icon" src="images/menu_icon.png" alt="Return to Main Menu" onclick="goToMainMenu()">
+        
+        <main>
+            <section id="mission-area" class="hidden">
+                <h2>Mission: Clean the Beach!</h2>
+                <div id="trash-container"></div>
+                <div id="bins">
+                    <div id="plastic-bin" class="bin">Plastic Bin</div>
+                    <div id="paper-bin" class="bin">Paper Bin</div>
+                    <div id="metal-bin" class="bin">Metal Bin</div>
+                    <div id="organic-bin" class="bin">Organic Bin</div>
+                    <div id="glass-bin" class="bin">Glass Bin</div>                                                        
+                </div>
+                <div id="scoreboard">
+                    <div id="score">Score: 0</div>
+                    <div id="timer">Time Left: 60</div>
+                </div>
+                <div id="game-buttons">
+                    <button id="quit-button">Quit</button>
+                </div>
+            </section>
+            <div id="message"></div>
+            <div id="facts"></div>
+            <button id="restart-button" class="hidden">Restart Game</button>
+        </main>
+        <footer>
+            <p>&copy; 2024 Eco Warriors. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Background Video Styling */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Ensure video is behind everything */
+    object-fit: cover;
+}
+
+/* Gradient Overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: -1;
+}
+
+/* Game Container */
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 1; /* Ensure game content is above the video */
+    padding: 0 20px;
+}
+
+/* Header Styling */
+h1 {
+    color: #f5f5f5;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Main Menu Icon Styling */
+#main-menu-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#main-menu-icon:hover {
+    transform: scale(1.1); /* Add hover effect */
+}
+
+h2 {
+    color: #ff7675;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* High Score Styling */
+#high-score {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff7675;
+    color: white;
+    padding: 12px 60px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-size: 1.2em;
+    margin: 15px 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background-color: #e74c3c;
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+#quit-button {
+    background-color: #d63031;
+}
+
+#quit-button:hover {
+    background-color: #c0392b;
+}
+
+/* Mission Area Styling */
+.mission-area {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for a polished look */
+    border: 2px solid #c0392b;
+    border-radius: 12px;
+    padding: 40px;
+    margin-top: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Trash Container Styling */
+#trash-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; /* More space between items */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Trash Item Styling */
+.trash-item {
+    background-color: #fff;
+    border: 2px solid #e74c3c;
+    border-radius: 10px;
+    padding: 10px;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.trash-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.trash-item:hover {
+    background-color: #ffeaa7;
+    transform: scale(1.1);
+}
+
+.trash-item.selected {
+    border-color: #27ae60;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Bin Container Styling */
+#bins {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 25px 0;
+}
+
+/* Bin Image Backgrounds */
+#plastic-bin {
+    background: url('images/plastic.png') no-repeat center center;
+    background-size: cover;
+}
+
+#organic-bin {
+    background: url('images/organic.png') no-repeat center center;
+    background-size: cover;
+}
+
+#glass-bin {
+    background: url('images/glass.png') no-repeat center center;
+    background-size: cover;
+}
+
+#paper-bin {
+    background: url('images/paper.png') no-repeat center center;
+    background-size: cover;
+}
+
+#metal-bin {
+    background: url('images/metal.png') no-repeat center center;
+    background-size: cover;
+}
+
+.bin {
+    border: 3px dashed #e74c3c;
+    border-radius: 12px;
+    padding: 30px;
+    width: 130px;
+    height: 130px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bin:hover {
+    background-color: rgba(231, 76, 60, 0.1);
+    transform: scale(1.05);
+    border-color: #27ae60;
+}
+
+/* Score, Timer, and Message Styling */
+#scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#score,
+#timer {
+    font-size: 1.5em;
+    color: #f5f5f5;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #f5b041;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Fact Box Styling */
+#facts {
+    font-style: italic;
+    margin-top: 15px;
+    color: #f5f5f5;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    button {
+        padding: 10px 40px;
+        font-size: 1em;
+    }
+    #trash-container {
+        flex-direction: column;
+    }
+}
