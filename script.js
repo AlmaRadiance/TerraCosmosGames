@@ -1,20 +1,20 @@
 const trashItems = [
-    { type: "Apple", src: "images/apple Background Removed.png", binType: "organic-bin" }, 
-    { type: "Carrot", src: "images/carrot Background Removed.png", binType: "organic-bin" },
-    { type: "Plastic Cup", src: "images/plastic cup Background Removed.png", binType: "plastic-bin" },
-    { type: "Watermelon", src: "images/watermelon Background Removed.png", binType: "organic-bin" },
-    { type: "Straw", src: "images/straw Background Removed.png", binType: "plastic-bin" },
-    { type: "Screwdriver", src: "images/screwdriver Background Removed.png", binType: "metal-bin" },
-    { type: "Plastic Container", src: "images/plastic container Background Removed.png", binType: "plastic-bin" },
-    { type: "Plastic Bottle Blue", src: "images/plastic bottle blue Background Removed.png", binType: "plastic-bin" },
-    { type: "Pizza", src: "images/pizza Background Removed.png", binType: "organic-bin" },
+    { type: "Apple", src: "Images/apple Background Removed.png", binType: "organic-bin" }, 
+    { type: "Carrot", src: "Images/carrot Background Removed.png", binType: "organic-bin" },
+    { type: "Plastic Cup", src: "Images/plastic cup Background Removed.png", binType: "plastic-bin" },
+    { type: "Watermelon", src: "Images/watermelon Background Removed.png", binType: "organic-bin" },
+    { type: "Straw", src: "Images/straw Background Removed.png", binType: "plastic-bin" },
+    { type: "Screwdriver", src: "Images/screwdriver Background Removed.png", binType: "metal-bin" },
+    { type: "Plastic Container", src: "Images/plastic container Background Removed.png", binType: "plastic-bin" },
+    { type: "Plastic Bottle Blue", src: "Images/plastic bottle blue Background Removed.png", binType: "plastic-bin" },
+    { type: "Pizza", src: "Images/pizza Background Removed.png", binType: "organic-bin" },
     { type: "Paper Roll", src: "images/paper roll Background Removed.png", binType: "paper-bin" },
-    { type: "Paper Box", src: "images/paper box Background Removed.png", binType: "paper-bin" },
-    { type: "Green Plastic Glass", src: "images/green plastic glass Background Removed.png", binType: "plastic-bin" },
-    { type: "Glass Bottle", src: "images/glass bottle Background Removed.png", binType: "glass-bin" },
-    { type: "Egg Paper Box", src: "images/egg paper box Background Removed.png", binType: "paper-bin" },
-    { type: "Can", src: "images/can Background Removed.png", binType: "metal-bin" },
-    { type: "Banana", src: "images/banana Background Removed.png", binType: "organic-bin" }
+    { type: "Paper Box", src: "Images/paper box Background Removed.png", binType: "paper-bin" },
+    { type: "Green Plastic Glass", src: "Images/green plastic glass Background Removed.png", binType: "plastic-bin" },
+    { type: "Glass Bottle", src: "Images/glass bottle Background Removed.png", binType: "glass-bin" },
+    { type: "Egg Paper Box", src: "Images/egg paper box Background Removed.png", binType: "paper-bin" },
+    { type: "Can", src: "Images/can Background Removed.png", binType: "metal-bin" },
+    { type: "Banana", src: "Images/banana Background Removed.png", binType: "organic-bin" }
 ];
 
 const bonusItems = [
